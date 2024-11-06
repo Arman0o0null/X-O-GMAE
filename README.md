@@ -1,21 +1,16 @@
-# Tic Tac Toe Subscriber Refactor
+# THIS IS NULL
 
 **Did you know??**
 
-There's a YouTube video I made about this repository. [You should watch it.]()
+This is my <<x - o>> game project you can see the complet game in orginal section and i try to improve the style and make this project look better and more beautiful in vanilla-refactor you can see my project source...
 
-## Quickstart
+## QUICK START
 
-There are two examples in this repository that show how the `/original` project could be refactored using different libraries and patterns. I suggest reading through them in the following order.
+1-the /"original"/ section is the main section and complate game you can run that in you'r own browser and statrt to play.
+2-but in /"vanilla-refactor"/ section i try to make it so better display and make it more beautiful.
 
-1. Vanilla Refactor - this is the _closest_ representation of the original project and I highly recommend starting here since the remaining examples build off of the patterns here. You can also view the `typescript` Git branch to see how this would look written in TS rather than JS.
-2. React Refactor - this shows a React implementation of the project, which is a much more _declarative_ approach than the vanilla implementations, which are mostly _imperative_. See my post on [declarative vs. imperative programming](https://www.zachgollwitzer.com/posts/imperative-programming). This also has a TypeScript implementation on the `typescript` branch.
+$$$if you like it my games and projects, i would be happy if you send me an email nad tell me what you think about my work, THIS IS // 01001110 01110101 01101100 01101100 00001010 //   
 
-## Attribution
-
-All the code in the `/original` directory is from [this repository](https://github.com/ivan00stojanovic/TickyToey) and was created by:
-
-- [@Ivan00Sto](https://twitter.com/Ivan00sto)
-- [@megfdev](https://twitter.com/megfdev)
+## AT THE END
 
 Thanks for your submission!!
