@@ -13,4 +13,4 @@ $$$if you like it my games and projects, i would be happy if you send me an emai
 
 ## AT THE END
 
-Thanks for your submission!!
+Thanks for read this page!!
