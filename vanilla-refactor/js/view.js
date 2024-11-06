@@ -40,8 +40,6 @@ export default class View {
   }
 
   /**
-   * This application follows a declarative rendering methodology
-   * and will re-render every time the state changes
    *
    * @see https://www.zachgollwitzer.com/posts/imperative-programming#react-declarative-vs-jquery-imperative
    */
@@ -190,8 +188,6 @@ export default class View {
   }
 
   /**
-   * Rather than registering event listeners on every child element in our Tic Tac Toe grid, we can
-   * listen to the grid container and derive which square was clicked using the matches() function.
    *
    * @param {*} el the "container" element you want to listen for events on
    * @param {*} selector the "child" elements within the "container" you want to handle events for

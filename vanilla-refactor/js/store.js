@@ -6,17 +6,6 @@ const initialState = {
   },
 };
 
-/**
- * Store is (loosely) the "Model" in the MV* or MVC pattern
- *
- * Think of this as our abstraction on top of an arbitrary data store.
- * In this app, we're using localStorage, but this class should not require
- * much change if we wanted to change our storage location to an in-memory DB,
- * external location, etc. (just change #getState and #saveState methods)
- *
- * This class extends EventTarget so we can emit a `statechange` event when
- * state changes, which the controller can listen for to know when to re-render the view.
- */
 export default class Store extends EventTarget {
   constructor(key, players) {
     // Since we're extending EventTarget, need to call super() so we have access to instance methods
@@ -28,10 +17,6 @@ export default class Store extends EventTarget {
   }
 
   /** stats() and game() are Convenience "getters"
-   *
-   * To avoid storing a complex state object that is difficult to mutate, we store a simple one (array of moves)
-   * and derive more useful representations of state via these "getters", which can be accessed as properties on
-   * the Store instance object.
    *
    * @example
    *
@@ -107,9 +92,6 @@ export default class Store extends EventTarget {
 
   playerMove(squareId) {
     /**
-     * Never mutate state directly.  Create copy of state, edit the copy,
-     * and save copy as new version of state.
-     *
      * @see https://developer.mozilla.org/en-US/docs/Web/API/structuredClone
      * @see https://redux.js.org/style-guide/#do-not-mutate-state
      */
@@ -125,9 +107,6 @@ export default class Store extends EventTarget {
 
   /**
    * Resets the game.
-   *
-   * If the current game is complete, the game is archived.
-   * If the current game is NOT complete, it is deleted.
    */
   reset() {
     const stateClone = structuredClone(this.#getState());
